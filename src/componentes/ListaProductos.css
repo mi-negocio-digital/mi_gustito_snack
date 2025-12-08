@@ -1,0 +1,48 @@
+.lista-productos{
+    display: flex;
+    flex-wrap: wrap;
+
+        
+}
+
+.producto{
+    margin: 30px;
+    flex-grow: 1;
+    flex-basis: 30%;
+    
+    border-bottom: 1px solid #ef823a;
+
+}
+
+
+.producto .mask img{
+    width: 100%;
+}
+
+.producto .mask{
+
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 0px 5px 15px #ddd;
+    
+
+}
+
+.lista-productos .producto strong{
+    color: #ef823a;
+}
+
+
+@media screen and (max-width:900px) {
+    
+    .producto{
+        flex-basis: 100%;
+    }
+
+    .producto .mask{
+        height: 300px;
+    }
+    
+}
