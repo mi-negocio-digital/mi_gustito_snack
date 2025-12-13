@@ -9,63 +9,47 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
 
     const {listadoPedidos,setListadoPedidos}=useContext(ContextoPedidos);
 
+    let suma=0;
    
   return (
         <div className='ventanaConfirmacion'>
         
         {(mensajeConfirmacion.seleccion===1 )&&(
             
-               <section>
+               <section className='ticket'>
 
             <h3>{mensajeConfirmacion.titulo}</h3>
             <p>{mensajeConfirmacion.mensaje}</p>
            
+                <span className='titulo-ticket'>
 
+                    <p>Cantidad</p>
+                    <p>Nombre</p>
+                    <p>Subtotal</p>
+                </span>
 
             {listadoPedidos.map((pedido, index)=>{
                           
-            
+                        {suma=suma+((pedido.datos.precio)*(pedido.cantidad))}
                             return(
             
-                                <section className='pedido' key={index}>
-            
-                                    <h3>{pedido.datos.categoria}</h3>
-                                    <hr/>
-            
-                                    <div className="datosPedido">
-            
-                                    <div className="mask">
-                                        <img src={pedido.datos.src} alt={pedido.id}></img>
-                                    </div>
-            
-                                    <div className="datosPedido2">
-            
-                                    <h2> {pedido.datos.nombre}</h2>
-            
-                                    <span>
-                            {"Cantidad: "+pedido.cantidad}
-                            </span>
-            
-                                    </div>
-            
-                                     <span>
-                                        {"$"+(pedido.datos.precio)*(pedido.cantidad)}
-                                     </span>
-            
-                                     </div>
-            
-            
-            
+                                <section  key={index} className='datos-ticket'>
+                                    <p>{pedido.cantidad}</p>
+                                    <p>{pedido.datos.nombre}</p>
+                                    <p>${(pedido.datos.precio)*(pedido.cantidad)}</p>
                                     
-            
-            
                                 </section>
             
                             )
+                            
             
                             
             
                         })}
+
+                        <h3>Total: ${suma}</h3>
+
+
 
 
 
@@ -93,27 +77,43 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
                                 <section className='pedido' >
             
                                    
-                                    <h3>{mensajeConfirmacion.item.categoria}</h3>
+                                    <h3>{mensajeConfirmacion.item[0].categoria}</h3>
                                     <hr/>
             
                                     <div className="datosPedido">
             
                                     <div className="mask">
-                                        <img src={mensajeConfirmacion.item.src} 
+                                        <img src={mensajeConfirmacion.item[0].src} 
                                         alt={'1'}></img>
                                     </div>
             
                                     <div className="datosPedido2">
             
-                                    <h2> {mensajeConfirmacion.item.nombre}</h2>
+                                    <h2> {mensajeConfirmacion.item[0].nombre}</h2>
             
                       
             
                                     </div>
             
                                      <span>
-                                        {"$"+(mensajeConfirmacion.item.precio)}
+                                        {"$"+(mensajeConfirmacion.item[0].precio)}
                                      </span>
+
+                                            tamaño:
+                                       {mensajeConfirmacion.item.map((data,index)=>{
+                                               
+                                               return(
+
+                                                <div key={index}>
+
+                                                <p>{data.tamano}</p>  
+                                                </div>
+                                              
+                                               )
+                                                
+                                        })}
+
+                                     
             
                                      </div>
             

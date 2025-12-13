@@ -127,7 +127,7 @@ const decrementarCarrito=(e)=>{
         return(
           
           <>
-            {(cat===data.categoria || cat==='masComprado') &&
+            {(cat===data[0].categoria || cat==='masComprado') &&
              
              (
 
@@ -137,7 +137,7 @@ const decrementarCarrito=(e)=>{
                 (subCat)?
                 <>
 
-                      {data.subCategoria===subCat &&(
+                      {data[0].subCategoria===subCat &&(
                              <section className='producto' >
 
 
@@ -145,11 +145,11 @@ const decrementarCarrito=(e)=>{
                                   <div>
                     
                 <div className='mask'>
-                    <img src={data.src} alt={index} ></img>
+                    <img src={data[0].src} alt={index} ></img>
                 </div>
                 
-                <h3>{data.nombre}<span className='precio'>{"$"+data.precio}</span> 
-                <span className='detalle' ><Link to={'/menu/'+data.nombre}>ver detalles  </Link></span></h3>
+                <h3>{data[0].nombre}<span className='precio'>{"$"+data[0].precio}</span> 
+                <span className='detalle' ><Link to={'/menu/'+data[0].nombre}>ver detalles  </Link></span></h3>
 
                 
                {/* <p>{data.descripcion}</p>*/}
@@ -180,7 +180,7 @@ const decrementarCarrito=(e)=>{
                   </section>
                   
                  )
-                 :<button className='carrito' onClick={()=> agregarCarrito(data,index,seleccionado)}>Agregar al Carrito</button>
+                 :<button className='carrito' onClick={()=> agregarCarrito(data[0],index,seleccionado)}>Agregar al Carrito</button>
 
                   }
                   
@@ -204,11 +204,11 @@ const decrementarCarrito=(e)=>{
                                   <div>
                     
                 <div className='mask'>
-                    <img src={data.src} alt={index} ></img>
+                    <img src={data[0].src} alt={index} ></img>
                 </div>
                 
-                <h3>{data.nombre}<span className='precio'>{"$"+data.precio}</span> 
-                <span className='detalle' ><Link to={'/menu/'+data.nombre}>ver detalles  </Link></span></h3>
+                <h3>{data[0].nombre}<span className='precio'>{"$"+data[0].precio}</span> 
+                <span className='detalle' ><Link to={'/menu/'+data[0].nombre}>ver detalles  </Link></span></h3>
 
                 
                {/* <p>{data.descripcion}</p>*/}
@@ -239,7 +239,7 @@ const decrementarCarrito=(e)=>{
                   </section>
                   
                  )
-                 :<button className='carrito' onClick={()=> agregarCarrito(data,index,seleccionado)}>Agregar al Carrito</button>
+                 :<button className='carrito' onClick={()=> agregarCarrito(data[0],index,seleccionado)}>Agregar al Carrito</button>
 
                   }
                   

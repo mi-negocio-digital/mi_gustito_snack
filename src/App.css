@@ -498,6 +498,34 @@ margin-left: 2rem;
 
 
 
+.ventanaConfirmacion .titulo-ticket{
+display: flex;
+flex-direction: row;
+}
+
+.ventanaConfirmacion .titulo-ticket p{
+  flex-basis: 33%;
+  font-weight: bold;
+}
+
+.ventanaConfirmacion .ticket{
+
+  border: 1px solid #ddd;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.ventanaConfirmacion .ticket .datos-ticket{
+  flex-direction: row;
+
+}
+
+.ventanaConfirmacion p{
+  flex-basis: 33%;
+}
+
+
 
 /* CONTENIDO FOOTER*/
 
@@ -565,7 +593,8 @@ margin-left: 2rem;
   display: flex;
   flex-direction: column;
   background: white;
-  padding: 5rem;
+  padding: 0;
+  margin: 0;
   
   
 }
