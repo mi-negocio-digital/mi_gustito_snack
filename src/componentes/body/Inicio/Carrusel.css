@@ -1,13 +1,21 @@
 .carrusel{
 
+    
+
     display: flex;
     position: relative;
-    background-color: antiquewhite;
+    
      width: 100%;
-    height: 400px;
+    height: auto;
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    border: 1px solid #ddd;
+    box-shadow: 0px 5px 15px #ddd;
+
+    margin: 0;
+    padding: 0;
+    
 
 }
 
@@ -65,7 +73,7 @@
 }
 
 .indicador-presionado{
-    background: gray;
+    background: #279e68;
 }
 
 

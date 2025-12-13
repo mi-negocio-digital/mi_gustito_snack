@@ -8,11 +8,14 @@ export const Inicio = () => {
   return (
     <div className='inicio'>
       
-      <Slogan/>
+      
 
       <Carrusel/>
-
+      
+      <Slogan/>
       <Descripcion/>
+
+      
 
       <MasComprado/>
 

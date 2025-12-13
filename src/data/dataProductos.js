@@ -1,60 +1,194 @@
+
+/*
+
 export const dataProductos =[
+   [ 
     {
 
         'nombre':'Tostilocos',
         'descripcion':'Saborea del delicioso sabor de los tostilocos',
-        'precio':'$70',
+        'precio':'100',
         'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
-        'alt':'p1',
-        'categoria':'Snack'
-    },{
-
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'}
+     ,{
         'nombre':'Tostilocos',
         'descripcion':'Saborea del delicioso sabor de los tostilocos',
-        'precio':'$70',
-        'src':'/producto1.jpg',
-        'alt':'p1',
-        'categoria':'Snack'
-    },{
+        'precio':'150',
+        'tamano':'mediano',
+        'caracteristicas':['','',''],
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'} 
+    ]
+         ,[{
 
-        'nombre':'Tostilocos',
-        'descripcion':'Saborea del delicioso sabor de los tostilocos',
-        'precio':'$70',
-        'src':'/producto1.jpg',
-        'alt':'p1',
-        'categoria':'Snack'
-    },{
+        'nombre':'Frape',
+        'descripcion':'sabe chido',
+        'precio':'75',
+        'src':'https://img.freepik.com/fotos-premium/cafe-frape-es-cafe-helado-cubierto-espuma-elaborado-cafe-instantaneo-nata-es-muy-popular-grecia-chipre-especialmente-verano-aunque-ha-extendido-otros-paises_449839-15163.jpg?w=1480',
+        'categoria':'Bebidas',
+        'subCategoria':'Saludable'
+        
+    },
+    {
 
-        'nombre':'Tostilocos',
-        'descripcion':'Saborea del delicioso sabor de los tostilocos',
-        'precio':'$70',
-        'src':'/producto1.jpg',
-        'alt':'p1',
-        'categoria':'Snack'
-    },{
-
-        'nombre':'Tostilocos',
-        'descripcion':'Saborea del delicioso sabor de los tostilocos',
-        'precio':'$70',
-        'src':'/producto1.jpg',
-        'alt':'p1',
-        'categoria':'Snack'
-    },{
-
-        'nombre':'Tostilocos',
-        'descripcion':'Saborea del delicioso sabor de los tostilocos',
-        'precio':'$70',
-        'src':'/producto1.jpg',
-        'alt':'p1',
-        'categoria':'Snack'
-    },{
-
-        'nombre':'Tostilocos',
-        'descripcion':'Saborea del delicioso sabor de los tostilocos',
-        'precio':'$70',
-        'src':'/producto1.jpg',
-        'alt':'p1',
-        'categoria':'Snack'
+        'nombre':'Frape',
+        'descripcion':'sabe chido',
+        'precio':'75',
+        'src':'https://img.freepik.com/fotos-premium/cafe-frape-es-cafe-helado-cubierto-espuma-elaborado-cafe-instantaneo-nata-es-muy-popular-grecia-chipre-especialmente-verano-aunque-ha-extendido-otros-paises_449839-15163.jpg?w=1480',
+        'categoria':'Bebidas',
+        'subCategoria':'Saludable'
+        
     }
+
+]
+    
+    ,{
+
+        'nombre':'Tapioca',
+        'descripcion':'Saborea de la tapioca',
+        'precio':'60',
+        'src':'https://cdn7.kiwilimon.com/brightcove/10265/10265.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Saludable'
+    },    {
+
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'70',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    },   {
+
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'70',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    },   {
+
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'70',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    },   {
+
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'70',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    },   {
+
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'70',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    },   {
+
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'70',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    }
+    
+    
+    
+]*/
+export const dataProductos =[
+    {
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'100',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    },    {
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'100',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    }
+    
+    ,{
+
+        'nombre':'Frape',
+        'descripcion':'sabe chido',
+        'precio':'75',
+        'src':'https://img.freepik.com/fotos-premium/cafe-frape-es-cafe-helado-cubierto-espuma-elaborado-cafe-instantaneo-nata-es-muy-popular-grecia-chipre-especialmente-verano-aunque-ha-extendido-otros-paises_449839-15163.jpg?w=1480',
+        'categoria':'Bebidas',
+        'subCategoria':'Saludable'
+        
+    },{
+
+        'nombre':'Tapioca',
+        'descripcion':'Saborea de la tapioca',
+        'precio':'60',
+        'src':'https://cdn7.kiwilimon.com/brightcove/10265/10265.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Saludable'
+    },    {
+
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'70',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    },   {
+
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'70',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    },   {
+
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'70',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    },   {
+
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'70',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    },   {
+
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'70',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    },   {
+
+        'nombre':'Tostilocos',
+        'descripcion':'Saborea del delicioso sabor de los tostilocos',
+        'precio':'70',
+        'src':'https://www.cocinavital.mx/wp-content/uploads/2022/05/tostilocos-receta-634x420.jpg',
+        'categoria':'Snacks',
+        'subCategoria':'Saludable'
+    }
+    
+    
     
 ]

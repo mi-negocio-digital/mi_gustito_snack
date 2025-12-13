@@ -1,12 +1,11 @@
 import React from 'react'
+import descripcion from '../../../images/fondo/8116.png'
 
 export const Descripcion = () => {
   return (
     <div className='descripcion'>
         
-        <h3>El lugar es una celebración de sabores intensos, 
-          donde lo picosito, lo acidito y lo cremoso se fusionan en creaciones 
-          que deleitan el paladar y te hacen exclamar: "¡Qué buen gusto!".</h3>
+        <img src={descripcion} alt='descripcion' ></img>
     </div>
   )
 }

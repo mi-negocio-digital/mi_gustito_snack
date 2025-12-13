@@ -1,13 +1,37 @@
 import React from 'react'
 import { ListaProductos } from '../ListProductos.js'
+import { subCategorias,categorias } from '../../data/dataCategorias.js';
+import { Link } from 'react-router-dom';
+
+
 
 export const Menu = () => {
-  return (
-    <div>
-      
-      <h1>Menú</h1>
 
-      <ListaProductos/>
+
+  return (
+    <div className='menuPrincipal'>
+      
+ 
+
+      {subCategorias.map((categoria,index)=>{
+
+          return(
+            <div key={index} className='categoria'>
+
+                <h2>{categorias[index]}</h2>
+                
+
+                <ListaProductos cat={categorias[index]}/>
+
+                <p ><Link to={'/menu/categorias/'+categorias[index]}>Ver mas ...</Link></p>
+
+            </div>
+          )
+      })}
+
+
+
+      
 
     </div>
 

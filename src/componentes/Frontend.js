@@ -1,15 +1,25 @@
-import React from 'react'
+
+
 import { Footer } from '../componentes/Footer';
 
 import { Nav } from '../componentes/Nav';
 import { Outlet } from 'react-router-dom'
 
 export const Frontend = () => {
+
+  
+
   return (
-    <div className='layout' >  
+
+    <div className='body'>
+
+
+      <div className='layout' >  
+
+    
      
       <nav className='nav'>
-       <Nav/>
+     {  <Nav/>}
 
       </nav>
 
@@ -19,11 +29,19 @@ export const Frontend = () => {
 
       </div>
       
-
-      <footer className='footer'>
+    
+            <footer className='footer'>
         <Footer/>
       </footer>
+    
+
       
+    
     </div>
+
+
+    </div>
+
+    
   )
 }

@@ -1,28 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
-.App-header {
-  margin: 0;
-  padding: 0;
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+
+body{
+
+  width: 100%;
+  background-image: url('/public/backround/194.png');
+  background-repeat: no-repeat;              
+  background-size: cover;                     
+  background-position: center;    
+  background-attachment: fixed;
+ 
+
+
+  
+
 }
 
+
 .layout{
+
   font-family:'Baloo 2', cursive;
   width: 100%;
-    height: auto;
+   
+
+    /*
     display: grid;
-    grid-template-areas:
-                         "nav nav nav nav"
-                         "content content content content"
-                         "footer footer footer footer"
-    
-    ;
+    grid-template-areas: "carr"
+                         "nav"
+                         "content"
+                         "footer";*/
+    display: flex;
+    flex-direction: column;
+   grid-template-columns: 1fr;
+   /*overflow-x: hidden;*/
+  
 
 
 
@@ -41,9 +53,11 @@
 }
 
 .navHead{
+
+  /**/
  display: grid;
 
- grid-template-areas: "logo navegador navegador navegador";
+ grid-template-areas: "logo navegador";
 
 }
 
@@ -57,14 +71,21 @@
   height: 100px;
 }
 .nav{
+ 
   grid-area: nav;
-  width: 100%;  
+  width: auto;  
   height: auto;
   background : linear-gradient(135deg, #53a6a9, #028285);
   border-bottom:solid 3px #058288;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
 }
 
 .nav ul{
+
   grid-area: navegador;
   
 
@@ -126,11 +147,15 @@ nav li a{
   
 
   grid-area: content;
-  background-color: rgb(255, 255, 255);
+  
   width: 100%;
   height: auto;
+  /*min-height: 100vh;*/
+  
 
 }
+
+
 
 .content .inicio{
   
@@ -139,13 +164,145 @@ nav li a{
   align-items: center;
 }
 
+.content .slogan{
+    margin-top: -20vw;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+ 
+  color:#ffffff ;
+
+  text-shadow: 5px 5px 5px  #282828;
+  animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+   from { text-shadow: 0 0 10px #ff00b3; }
+  to   { text-shadow: 0 0 20px #1900ff; }
+}
+
+.content .slogan img{
+
+  width: 35vw;
+  height: auto;
+}
+
+.content .masComprado{
+  width: 100%;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+.content .menuPrincipal .categoria .lista-productos{
+ display: flex;
+  flex-direction: row ;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+
+
+ 
+  width: 100%;
+
+  min-width: 0;
+  overflow-y: auto;
+  
+
+}
+
+.content .menuPrincipal{
+
+    flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  background: white;  
+}
+
+.content .menuPrincipal,
+.content .menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  background: white;  
+
+}
+.content .menuPrincipal h2,
+.content .menu h1,.content .menu h2{
+    text-align: center;
+  
+  color:#ffffff ;
+
+  text-shadow: 5px 5px 5px  #282828;
+  animation: glow 1.5s infinite alternate;
+}
+.content .menu h1{
+  background: white;
+  font-size: 5rem;
+}
+
+
+.content .DatoProducto{
+  background: white;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 2px #ddd;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.content .DatoProducto mask{
+
+  width: 50%;
+  overflow: hidden;
+}
+
+.content .DatoProducto mask img{
+  width: 100%;
+  height: auto;
+}
+
+.content .categoria{
+  margin-top: 5vw;
+  padding-top: 5vw;
+  margin-bottom: 5vw;
+  padding-bottom: 5vw;
+  background:rgb(255, 255, 255);
+
+}
+
+
+.content .masInfo{
+  width: 100%;
+  background-color: white;
+  text-align: center;
+    margin-top: 30px;
+ 
+}
+
 .content .masInfo button{
   background-color: #028285;
   color: white;
-  padding: 5px;
+  padding: 15px;
   border: none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
   margin: 5px;
 }
@@ -157,16 +314,186 @@ nav li a{
 .content .inicio .descripcion{
   
 
-  width: 300px;
+  width:100%;
   height: auto;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
   border-radius: 10px;
-  margin-top: 25px;
-  padding: 30px;
-  background: antiquewhite;
+
+ 
+
   color: #058288;
  
+}
+
+.content .inicio .descripcion img{
+
+  width: 100%;
+  height: auto;
+}
+
+.content .seccionCarrito{
+  
+    display: flex;
+    justify-content: center;
+
+  height: auto;
+ 
+ 
+
+  color: #a09f9f;
+  
+
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 2px #ddd ;
+
+}
+
+.content .seccionCarrito button{
+    background-color: #028285;
+  color: white;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 5px;
+  
+}
+
+
+.content .noCarritoPedido{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    background: white;
+ align-items: center;
+  justify-content: center;
+ height: 100vh;
+ width: 80%;
+ margin: 10px;
+ border: 1px solid #ddd;
+ box-shadow: 2px 2px 2px #ddd;
+ border-radius: 10px;
+ padding: 15px;
+ align-items: center;
+
+}
+
+.content .carritoPedido{
+
+  width: 100%;
+
+ display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+
+ /* display: grid;
+  grid-template-columns: calc(100% - 392px) auto;*/
+
+}
+
+
+
+.content .pedidos{
+    width: 60%;
+    padding: 1rem;
+}
+
+.content .resumenCompra{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 30%;
+  height: 200px;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 2px #ddd;
+  border-radius: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem ;
+
+    top: calc(100px + 1rem);
+  
+  position: sticky;
+
+
+}
+
+.ventanaConfirmacion section .pedido ,
+.content .carritoPedido .pedido{
+
+
+ 
+  height: auto;
+  border-radius: 10px;
+  border-bottom: 5px solid #ddd;
+  box-shadow: 0px 5px 15px #ddd;
+  background: #ffffff;
+
+  
+
+}
+
+.ventanaConfirmacion section .pedido .datosPedido,
+.content .carritoPedido .pedido .datosPedido{
+  display: flex;
+  flex-direction: row;
+}
+
+.ventanaConfirmacion section .pedido .datosPedido2,
+.content .carritoPedido .pedido .datosPedido2{
+  color: #ef823a;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+.ventanaConfirmacion section .pedido .datosPedido2 span,
+.content .carritoPedido .pedido .datosPedido2 span{
+  display: flex;
+  margin-right: 5px;
+  margin-left: 5px;
+  
+} 
+
+.content .carritoPedido .pedido .datosPedido2 span .arrowCarrito{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+color: white;
+filter: drop-shadow(0px 0px 3px #ddd);
+margin-right: 2rem;
+margin-left: 2rem;
+}
+
+.ventanaConfirmacion section .pedido  span,
+.content .carritoPedido .pedido span{
+  color: rgb(0, 0, 0);
+ margin-left: 3rem;
+  margin-right: 3rem;
+  font-size: 1.5rem;
+
+  /*align-content: center;*/
+}
+.ventanaConfirmacion section .pedido  .mask,
+.content .carritoPedido .pedido .mask{
+
+  width: 10rem;
+  height: auto;
+  overflow: hidden;
+}
+
+.ventanaConfirmacion section .pedido img,
+.content .carritoPedido .pedido img{
+  
+  width: 100% ;
+  height: auto;
 }
 
 
@@ -174,6 +501,10 @@ nav li a{
 
 /* CONTENIDO FOOTER*/
 
+.piePagina{
+  background-color: #058288;
+  width: 100%;
+}
 
 .footer{
   height: 100px;
@@ -210,8 +541,124 @@ nav li a{
   color: #058288  ;
 }
 
+
+
+
+.ventanaConfirmacion{
+
+  width: 100%;
+  height: 100%;
+
+  background: #282c345d;
+
+  display: flex;
+  min-width: 0;
+  justify-content: center;
+  align-items: center;
+
+ 
+
+
+}
+
+.ventanaConfirmacion section{
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 5rem;
+  
+  
+}
+.ventanaConfirmacion button{
+    background-color: #028285;
+  color: white;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+
+
+
 .App-link {
   color: #61dafb;
+}
+
+@media screen and (max-width:900px) {
+
+.nav ul{
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+  .content .carritoPedido{
+    flex-direction: column;
+  }
+  .content .resumenCompra{
+    border-top: 1px solid #ddd;
+    box-shadow: 0px 0px 5px #ddd;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+
+  }
+
+  .content .pedidos{
+    width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+
+.content .DatoProducto mask{
+  width: 100%;
+}
+
+.content .DatoProducto{
+    width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.ventanaConfirmacion{
+  
+
+width: 100%;
+  
+}
+
+.ventanaConfirmacion section{
+  
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #ffffff;
+}
+
+.ventanaConfirmacion section .pedido{
+  width: 100%;
+}
+.content .carritoPedido{
+   align-items: center;
+}
+.ventanaConfirmacion section .pedido .datosPedido,
+.content .carritoPedido .pedido .datosPedido{
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .menuPrincipal,
+.content .menu{
+
+  margin: 0;
+  width: 100%;
+}
 }
 
 @keyframes App-logo-spin {
