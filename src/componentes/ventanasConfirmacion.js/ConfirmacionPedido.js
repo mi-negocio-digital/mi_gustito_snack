@@ -250,7 +250,7 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
 
         {((mensajeConfirmacion.seleccion===2) ||(mensajeConfirmacion.seleccion===3))&&(
 
-        <section>
+        <section className='base_ventana'>
 
             <h3>{mensajeConfirmacion.titulo}</h3>
             <p>{mensajeConfirmacion.mensaje}</p>

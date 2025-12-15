@@ -148,9 +148,11 @@ const confirmacion=()=>{
                         <h2> {pedido.datos.nombre}</h2>
                         {pedido.index_complemento!==null &&<span style={{color:"#ddd"}}>
                                       
-                                        <p>{pedido.cantidad}  -  </p>
-                                        <p>Extra: {pedido.datos.complemento[pedido.index_complemento].nombre}</p>
-                                        <p>${pedido.datos.complemento[pedido.index_complemento].precio*pedido.cantidad}</p>
+                                     
+                                        <p>complemento: {pedido.datos.complemento[pedido.index_complemento].nombre}</p>
+                                  {(pedido.datos.complemento[pedido.index_complemento].precio)>0 &&(
+                                    <p>${pedido.datos.complemento[pedido.index_complemento].precio*pedido.cantidad}</p>
+                                  ) }      
                           </span>}
 
                         <span>

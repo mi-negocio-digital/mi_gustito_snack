@@ -1403,6 +1403,968 @@ export const dataProductos =[
     ]
     ],
 
+//  CATEGORIA PAQUETES SUBCATEGORIAS PAQUETES
+
+[ 
+        [
+                {
+        'id':68,
+        'nombre':'Paquete Familiar',
+        'descripcion':'Para disfrutar en Familia',
+        'ingredientes':'1 orden de alitas 500 gr + 1 orden de boneless 300 gr +dedos de queso + aros de cebolla + papas gajo + papasfrancesa + salchipulpos y salchitaco + 4 aderezos.',
+        'precio':'590',
+        'tamano':'Normal',
+        'tipo':'Paquete Familiar',
+
+
+
+        'src':'https://buffalucas.com/es/img/menu/charolas_bf_menu.png',
+        'categoria':'Paquetes',
+        'subCategoria':'Paquetes'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':69,
+        'nombre':'Paquete Pareja',
+        'descripcion':'Para disfrutar en Pareja',
+        'ingredientes':'1 orden de alitas 500 gr + dedos de queso + aros decebolla + papas gajo + papas francsa + salchipulpos +2 aderezos.',
+        'precio':'390',
+        'tamano':'Normal',
+        'tipo':'Paquete Pareja',
+
+
+
+        'src':'https://img0.didiglobal.com/static/soda_public/do1_TEbgyTwrlI8gxYTIy5rh',
+        'categoria':'Paquetes',
+        'subCategoria':'Paquetes'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':70,
+        'nombre':'Gustito Box Familiar',
+        'descripcion':'Para disfrutar con mucha gente',
+        'ingredientes':'1 orden de alitas 500 gr + 1 orden de boneless 300 gr +2 rollos de sushi empanizado + dedos de queso + arosde cebolla + papas gajo + salchipulpos + 4 aderezos.',
+        'precio':'748',
+        'tamano':'Normal',
+        'tipo':'Gustito Box Familiar',
+
+
+
+        'src':'https://tb-static.uber.com/prod/image-proc/processed_images/2c1ddab35027322b894995c1348ae082/1da9a9e826d15157cea1c5bb8696f248.webp',
+        'categoria':'Paquetes',
+        'subCategoria':'Paquetes'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':71,
+        'nombre':'Gustito Box Pareja',
+        'descripcion':'Para disfrutar con tu pareja',
+        'ingredientes':'1 orden de alitas 500 gr + 1 rollos de sushi empanizado +dedos de queso + aros de cebolla + papas gajo +salchipulpos + 2 aderezos.',
+        'precio':'450',
+        'tamano':'Normal',
+        'tipo':'Gustito Box Pareja',
+
+
+
+        'src':'https://tb-static.uber.com/prod/image-proc/processed_images/493295fb19c2777f5fefe2c7cfe2aac8/9e31c708e4cf73b6e3ea1bd4a9b6e16b.jpeg',
+        'categoria':'Paquetes',
+        'subCategoria':'Paquetes'}
+
+    ]
+    ],
+//  CATEGORIA BEBIDAS SUBCATEGORIAS AGUAS FRESCAS
+
+[ 
+        [
+                {
+        'id':72,
+        'nombre':'Aguas Frescas 1lt',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Agua',
+        'precio':'30',
+        'tamano':'Normal',
+        'tipo':'naranja',
+
+
+
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYAACqBWqSgNHIxMwCWYTdTEcObnJK_AEr0A&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Aguas Frescas'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':73,
+        'nombre':'Agua natural 1lt',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Agua',
+        'precio':'20',
+        'tamano':'Normal',
+        'tipo':'Natural',
+
+
+
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr8IBg2xsxQUeKlKbrZAiyUSpp8usoB7wrdg&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Aguas Frescas'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':74,
+        'nombre':'Naranjada',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Agua, naranja',
+        'precio':'39',
+        'tamano':'Normal',
+        'tipo':'Natural',
+
+
+
+        'src':'https://cafedelaflor.com/images/productos/20221201141534pag.web_(84).jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Aguas Frescas'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':75,
+        'nombre':'Limonada',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Agua, limón',
+        'precio':'39',
+        'tamano':'Normal',
+        'tipo':'Natural',
+
+
+
+        'src':'https://lasaucykitchen.com/wp-content/uploads/2021/08/agua-fresca-de-pepinos-con-limon-thumbnail.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Aguas Frescas'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':76,
+        'nombre':'Limonada frutos rojos',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Agua, frutos rojos',
+        'precio':'45',
+        'tamano':'Normal',
+        'tipo':'Natural',
+
+
+
+        'src':'https://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/14b683eaba0e9c07e51aa95de0fbfffa.png?itok=hJUHS6kM',
+        'categoria':'Bebidas',
+        'subCategoria':'Aguas Frescas'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':77,
+        'nombre':'Limonada de maracuya',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Agua, Maracuya',
+        'precio':'45',
+        'tamano':'Normal',
+        'tipo':'Natural',
+
+
+
+        'src':'https://blog.sigonas.com/wp-content/uploads/2024/04/Agua-Fresca-de-Maracuya_passion-fruit-5183-copy.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Aguas Frescas'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':78,
+        'nombre':'Fuze Tea',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Agua, Saborizante',
+        'precio':'30',
+        'tamano':'Normal',
+        'tipo':'Bebida',
+
+
+
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQogWXGwP6LtSmMzqVfLWX1SqaXGUVbsPhnJg&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Aguas Frescas'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':79,
+        'nombre':'Arizona',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Agua, Saborizante',
+        'precio':'35',
+        'tamano':'Normal',
+        'tipo':'Mango',
+
+       
+
+        'src':'https://d1zc67o3u1epb0.cloudfront.net/media/catalog/product/2/7/27068.jpg?width=265&height=390&store=default&image-type=image',
+        'categoria':'Bebidas',
+        'subCategoria':'Aguas Frescas'},
+                        {
+        'id':80,
+        'nombre':'Arizona',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Agua, Saborizante',
+        'precio':'35',
+        'tamano':'Normal',
+        'tipo':'Sandía',
+
+       
+
+        'src':'https://res.cloudinary.com/riqra/image/upload/v1695770006/sellers/6/vpmmhqbf10mjszcxxnnp.webp',
+        'categoria':'Bebidas',
+        'subCategoria':'Aguas Frescas'},
+                        {
+        'id':81,
+        'nombre':'Arizona',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Agua, Saborizante',
+        'precio':'35',
+        'tamano':'Normal',
+        'tipo':'Té verde',
+
+       
+
+        'src':'https://res.cloudinary.com/riqra/image/upload/w_656,h_656,c_limit,q_auto,f_auto/v1694106881/sellers/9/okewztbcjo768bq6g5ob.png',
+        'categoria':'Bebidas',
+        'subCategoria':'Aguas Frescas'},
+                        {
+        'id':82,
+        'nombre':'Arizona',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Agua, Saborizante',
+        'precio':'35',
+        'tamano':'Normal',
+        'tipo':'Kiwi con Fresa',
+
+       
+
+        'src':'https://i5.walmartimages.com/asr/71a2bbd6-4963-419a-afa0-690656e4aee3.e412429b38579b4f6b9254dce28f03d3.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF',
+        'categoria':'Bebidas',
+        'subCategoria':'Aguas Frescas'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':83,
+        'nombre':'Refresco',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Saborizante',
+        'precio':'30',
+        'tamano':'Normal',
+        'tipo':'Coca-cola',
+          
+        
+
+
+        'src':'https://www.coca-cola.com/content/dam/onexp/co/es/brands/coca-cola/coca-cola-original/ccso_600ml_750x750.png',
+        'categoria':'Bebidas',
+        'subCategoria':'Aguas Frescas'}
+
+    ]
+    ],
+
+//SUBCATEGORIA LATTER FRIO
+
+[ 
+        [
+                {
+        'id':84,
+        'nombre':'Latte Frio',
+        'descripcion':'Delicioso y cremoso',
+        'ingredientes':'Chai',
+        'precio':'69',
+        'tamano':'Normal',
+        'tipo':'Chai',
+          
+        
+
+
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRd-OyGjykWB2mIMOljd826AtJhxss0eoj8g&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Latte Frio'},
+                        
+
+
+    ]
+    ],
+
+[
+    [
+                {
+        'id':85,
+        'nombre':'Latte Frio Matcha',
+        'descripcion':'Delicioso y cremoso',
+        'ingredientes':'Matcha',
+        'precio':'69',
+        'tamano':'Normal',
+        'tipo':'Matcha',
+        'src':'https://www.recetasnestle.com.mx/sites/default/files/srh_recipes/349ed840d8f95e11fd21ddfb8deb1080.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Latte Frio'}
+    ]
+],
+
+[
+    [
+         {
+        'id':86,
+        'nombre':'Latte Frio Caramelo',
+        'descripcion':'Delicioso y cremoso',
+        'ingredientes':'Caramelo',
+        'precio':'69',
+        'tamano':'Normal',
+        'tipo':'Caramelo',
+          
+        
+
+
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6LF2rO51m9guL2FN8f_s9YvXrDE8sYdWhHg&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Latte Frio'}
+    ]
+],
+
+
+[
+    [
+                     
+                        {
+        'id':87,
+        'nombre':'Latte Frio Vainilla Francesa',
+        'descripcion':'Delicioso y cremoso',
+        'ingredientes':'Vainilla francesa',
+        'precio':'69',
+        'tamano':'Normal',
+        'tipo':'Vainilla francesa',
+          
+        
+
+
+        'src':'https://placerydelirio.com/cdn/shop/files/IMG_8255_503x503.jpg?v=1758577021',
+        'categoria':'Bebidas',
+        'subCategoria':'Latte Frio'}
+    ]
+],
+
+
+//SUBCATEGORIA FRAPPÉ
+[ 
+        [
+                {
+        'id':88,
+        'nombre':'Frappé',
+        'descripcion':'Delicioso y cremoso',
+        'ingredientes':'Frapuchino',
+        'precio':'75',
+        'tamano':'Normal',
+        'tipo':'Frapuchino',
+        'src':'https://s1.abcstatics.com/abc/sevilla/media/gurme/2023/07/05/s/frappuccino-starbucks-kmGG--1248x698@abc.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Frappé'},
+                        {
+        'id':89,
+        'nombre':'Frappé',
+        'descripcion':'Delicioso y cremoso',
+        'ingredientes':'Moka',
+        'precio':'75',
+        'tamano':'Normal',
+        'tipo':'Moka',
+        'src':'https://d1uz88p17r663j.cloudfront.net/original/ff90073c2cf629615c8b1e4fab850df5_FRAPPE_DE_MOKA_.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Frappé'},
+
+                        {
+        'id':90,
+        'nombre':'Frappé',
+        'descripcion':'Delicioso y cremoso',
+        'ingredientes':'Taro',
+        'precio':'75',
+        'tamano':'Normal',
+        'tipo':'Taro',
+        'src':'https://teazone.mx/cdn/shop/products/tea-zone-polvo-taro-powder-4_1000x1000.jpg?v=1761685115',
+        'categoria':'Bebidas',
+        'subCategoria':'Frappé'},
+
+                        {
+        'id':91,
+        'nombre':'Frappé',
+        'descripcion':'Delicioso y cremoso',
+        'ingredientes':'Matcha',
+        'precio':'75',
+        'tamano':'Normal',
+        'tipo':'Matcha',
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOJ2rmA1-VcmTK7XCZzsi2DPV4MAgTQXWnsg&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Frappé'},
+                                {
+        'id':92,
+        'nombre':'Frappé',
+        'descripcion':'Delicioso y cremoso',
+        'ingredientes':'Gansito',
+        'precio':'75',
+        'tamano':'Normal',
+        'tipo':'Gansito',
+        'src':'https://camillelittlecookie.com/wp-content/uploads/2023/08/Captura-de-Pantalla-2023-08-09-a-las-21.26.48-edited.png',
+        'categoria':'Bebidas',
+        'subCategoria':'Frappé'},
+                                        {
+        'id':93,
+        'nombre':'Frappé',
+        'descripcion':'Delicioso y cremoso',
+        'ingredientes':'Chocorrol',
+        'precio':'75',
+        'tamano':'Normal',
+        'tipo':'Chocorrol',
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlrXs4W_f00id8bG6LNwjU-cXTk5PDy9YyeQ&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Frappé'},
+                                                {
+        'id':94,
+        'nombre':'Frappé',
+        'descripcion':'Delicioso y cremoso',
+        'ingredientes':'Pingüino',
+        'precio':'75',
+        'tamano':'Normal',
+        'tipo':'Pingüino',
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3rH9_XW6WV8sx9arVNLDrFdbsKAqFch8MKg&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Frappé'},
+
+    ]
+    ],
+//SUBCATEGORIA MALTEADA
+
+[ 
+        [
+                {
+        'id':95,
+        'nombre':'Malteada Fresa',
+        'descripcion':'Delicioso y cremoso',
+        'ingredientes':'Fresa',
+        'precio':'59',
+        'tamano':'Normal',
+        'tipo':'Fresa',
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9FAktByaYW_rWW93VwbduITG3FJ5XemJmww&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Malteada'}
+
+
+
+
+    ]
+    ],
+
+[
+    [
+                                {
+        'id':96,
+        'nombre':'Malteada Óreo',
+        'descripcion':'Delicioso y cremoso',
+        'ingredientes':'Óreo',
+        'precio':'59',
+        'tamano':'Normal',
+        'tipo':'Óreo',
+        'src':'https://cdn7.kiwilimon.com/recetaimagen/20113/960x640/19197.jpg.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Malteada'}
+    ]
+],
+
+//SUBCATEGORIA REFRESCOS ORIENTALES
+[ 
+        [
+                {
+        'id':97,
+        'nombre':'Chupa Chups',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Saborizante',
+        'precio':'39',
+        'tamano':'Normal',
+        'tipo':'Chupa Chups',
+
+
+
+        'src':'https://http2.mlstatic.com/D_NQ_NP_994474-MLU77756839808_072024-O.webp',
+        'categoria':'Bebidas',
+        'subCategoria':'Refrescos Orientales'}
+
+    ]
+    ],
+    [ 
+        [
+                {
+        'id':98,
+        'nombre':'Ramune',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Saborizante',
+        'precio':'66',
+        'tamano':'Normal',
+        'tipo':'Ramune',
+
+
+
+        'src':'https://sakuramarket.com.mx/wp-content/uploads/2024/03/3.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Refrescos Orientales'}
+
+    ]
+    ],
+    [ 
+        [
+                {
+        'id':99,
+        'nombre':'Nico nico',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Saborizante',
+        'precio':'39',
+        'tamano':'Normal',
+        'tipo':'Nico nico',
+
+
+
+        'src':'https://shinsekai.com.mx/cdn/shop/files/3_f5a6f8c6-1651-4be4-a81c-1c232a623f15_1200x1200.jpg?v=1737517829',
+        'categoria':'Bebidas',
+        'subCategoria':'Refrescos Orientales'}
+
+    ]
+    ],
+    [ 
+        [
+                {
+        'id':100,
+        'nombre':'Sparkling soda',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Saborizante',
+        'precio':'49',
+        'tamano':'Normal',
+        'tipo':'Sparkling soda',
+
+
+
+        'src':'https://sakuramarket.com.mx/wp-content/uploads/2024/04/57.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Refrescos Orientales'}
+
+    ]
+    ],
+    [ 
+        [
+                {
+        'id':101,
+        'nombre':'Calpico',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Saborizante',
+        'precio':'39',
+        'tamano':'Normal',
+        'tipo':'Calpico',
+
+
+
+        'src':'https://http2.mlstatic.com/D_NQ_NP_676205-MLM72675398951_112023-O.webp',
+        'categoria':'Bebidas',
+        'subCategoria':'Refrescos Orientales'}
+
+    ]
+    ],
+    [ 
+        [
+                {
+        'id':102,
+        'nombre':'Chelada',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Sal y limón',
+        'precio':'75',
+        'tamano':'Normal',
+        'tipo':'Chelada',
+
+
+
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSfe4TPaBxZhIqEdH_q9a-JVIgeneuvzaB4Q&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Refrescos Orientales'}
+
+    ]
+    ],
+    [ 
+        [
+                {
+        'id':103,
+        'nombre':'Michelada',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Clamato y salsas negras',
+        'precio':'89',
+        'tamano':'Normal',
+        'tipo':'Michelada',
+
+
+
+        'src':'https://cdn7.kiwilimon.com/recetaimagen/37524/1200x600/47424.jpg.webp',
+        'categoria':'Bebidas',
+        'subCategoria':'Refrescos Orientales'}
+
+    ]
+    ],
+    [ 
+        [
+                {
+        'id':104,
+        'nombre':'Michelada Gustito',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Salchicha o cuertitos, Sabritas, gomitas, cacahuate, rielios, banderilla, chamoy y chile en polvo.',
+        'precio':'179',
+        'tamano':'Normal',
+        'tipo':'Michelada Gustito',
+
+
+
+        'src':'https://www.dondeir.com/wp-content/uploads/2016/10/michelada-fest.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Refrescos Orientales'}
+
+    ]
+    ],
+    [ 
+        [
+                {
+        'id':105,
+        'nombre':'Rusa Squirt',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Squirt',
+        'precio':'59',
+        'tamano':'Normal',
+        'tipo':'Rusa Squirt',
+
+
+
+        'src':'https://fatimaspupusasandtacos.com/wp-content/uploads/2024/07/rusa1.png',
+        'categoria':'Bebidas',
+        'subCategoria':'Refrescos Orientales'}
+
+    ]
+    ],
+//SUBCATEGORIA SMOOTHIES
+    [ 
+        [
+                {
+        'id':106,
+        'nombre':'Smoothie',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Fresa',
+        'precio':'65',
+        'tamano':'Normal',
+        'tipo':'Fresa',
+
+
+
+        'src':'https://static01.nyt.com/images/2025/02/25/multimedia/Strawberry-Smoothie-cqzb/Strawberry-Smoothie-cqzb-videoSixteenByNineJumbo1600.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Smoothies'},
+                        {
+        'id':107,
+        'nombre':'Smoothie',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Mango',
+        'precio':'65',
+        'tamano':'Normal',
+        'tipo':'Mango',
+
+
+
+        'src':'https://www.goodnes.com/sites/g/files/jgfbjl321/files/srh_recipes/50bc35dd2212868d66ebc7cff0e618c0.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Smoothies'},
+                        {
+        'id':108,
+        'nombre':'Smoothie',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Maracuyá',
+        'precio':'65',
+        'tamano':'Normal',
+        'tipo':'Maracuyá',
+
+
+
+        'src':'https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/84808425-FD41-4BC0-BE97-A382A28C83D6/Derivates/15AA664E-9BB4-4A05-95F0-106C1F49BA58.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Smoothies'},
+                        {
+        'id':109,
+        'nombre':'Smoothie',
+        'descripcion':'Para refrescarse',
+        'ingredientes':'Frutos rojos',
+        'precio':'65',
+        'tamano':'Normal',
+        'tipo':'Frutos rojos',
+
+
+
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDrqpjEbm0IhMDiUVlGWt0w5MEZ6XJE9tb3Q&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Smoothies'}
+
+    ]
+    ],
+//SUBCATEGORIA GUSTISODAS
+[ 
+        [
+                {
+        'id':110,
+        'nombre':'GustiSoda Manzana Verde',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Manzana Verde',
+        'precio':'69',
+        'tamano':'Normal',
+        'tipo':'Manzana Verde',
+
+
+
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8KDieYj-aJ9DnxAtgiyzIZvWQn4TjAR3J6A&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Gustisodas'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':111,
+        'nombre':'GustiSoda Mandarina',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Mandarina',
+        'precio':'69',
+        'tamano':'Normal',
+        'tipo':'Mandarina',
+
+
+
+        'src':'https://i.ytimg.com/vi/kL4r_g49qT0/maxresdefault.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Gustisodas'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':112,
+        'nombre':'GustiSoda Frutos rojos',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Frutos rojos',
+        'precio':'69',
+        'tamano':'Normal',
+        'tipo':'Frutos Rojos',
+
+
+
+        'src':'https://loyalty-imagenes.canalrcn.com/loyalty/images/strapi/receta_soda_frutos_rojos_1565979d6b.webp',
+        'categoria':'Bebidas',
+        'subCategoria':'Gustisodas'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':113,
+        'nombre':'GustiSoda Mango',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Mango',
+        'precio':'69',
+        'tamano':'Normal',
+        'tipo':'Mango',
+
+
+
+        'src':'https://http2.mlstatic.com/D_NQ_NP_998038-MLA84838309467_052025-O.webp',
+        'categoria':'Bebidas',
+        'subCategoria':'Gustisodas'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':114,
+        'nombre':'GustiSoda Frutas de la pasion',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Frutas intensas',
+        'precio':'69',
+        'tamano':'Normal',
+        'tipo':'Frutas de la pasión',
+
+
+
+        'src':'https://thumbs.dreamstime.com/b/bebida-italiana-de-la-soda-61322586.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Gustisodas'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':115,
+        'nombre':'GustiSoda Azulito',
+        'descripcion':'Para refrescarse e hidratarse',
+        'ingredientes':'Frutas azules',
+        'precio':'75',
+        'tamano':'Normal',
+        'tipo':'Azulito',
+
+
+
+        'src':'https://static.wixstatic.com/media/3e9405_13f1a782262f49c1b6025fcd8e1ae990~mv2.jpeg/v1/fill/w_280,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/soda-italiana-de-blue-berries.jpeg',
+        'categoria':'Bebidas',
+        'subCategoria':'Gustisodas'}
+
+    ]
+    ],
+
+//SUBCATEGORIA CHOCOMILK
+
+[ 
+        [
+                {
+        'id':116,
+        'nombre':'Cholomilk',
+        'descripcion':'Deliciosa y cremosa',
+        'ingredientes':'Chocolate',
+        'precio':'39',
+        'tamano':'Normal',
+        'tipo':'Chocolate',
+
+
+
+        'src':'https://operadoramontalvo.com/wp-content/uploads/2025/04/chomilk.png',
+        'categoria':'Bebidas',
+        'subCategoria':'Chocomilk'},
+                        {
+        'id':117,
+        'nombre':'Cholomilk',
+        'descripcion':'Deliciosa y cremosa',
+        'ingredientes':'Fresa',
+        'precio':'39',
+        'tamano':'Normal',
+        'tipo':'Fresa',
+
+
+
+        'src':'https://www.recetasnestle.com.mx/sites/default/files/srh_recipes/33104de080cc9288d3f7238c91644a9f.png',
+        'categoria':'Bebidas',
+        'subCategoria':'Chocomilk'},
+                                {
+        'id':118,
+        'nombre':'Cholomilk',
+        'descripcion':'Deliciosa y cremosa',
+        'ingredientes':'Vainilla',
+        'precio':'39',
+        'tamano':'Normal',
+        'tipo':'Vainilla',
+
+
+
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrC9CyP_cwiF-kYLccGTgmvko_Pu2FipW2xA&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Chocomilk'}
+
+    ]
+    ],
+[ 
+        [
+
+        {
+        'id':119,
+        'nombre':'Cholomilk Rompope',
+        'descripcion':'Deliciosa y cremosa',
+        'ingredientes':'Rompope',
+        'precio':'45',
+        'tamano':'Normal',
+        'tipo':'Rompope',
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ66nYmHIEUXxqf1Ej_g8oMvqkog2G2oVAoA&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Chocomilk'},
+        
+        {
+        'id':120,
+        'nombre':'Cholomilk Jerez',
+        'descripcion':'Deliciosa y cremosa',
+        'ingredientes':'Jerez',
+        'precio':'45',
+        'tamano':'Normal',
+        'tipo':'Jerez',
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrC9CyP_cwiF-kYLccGTgmvko_Pu2FipW2xA&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Chocomilk'}
+
+    ]
+    ],
+[ 
+        [
+
+        {
+        'id':121,
+        'nombre':'Bolis de Sabores',
+        'descripcion':'Deliciosa y refrescante',
+        'ingredientes':'Leche',
+        'precio':'29',
+        'tamano':'Normal',
+        'tipo':'Leche',
+        'src':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBhswgOJ3Vv6aNvhMrc579uoQ12sCUnBPGQQ&s',
+        'categoria':'Bebidas',
+        'subCategoria':'Bolis de Sabores'},
+        
+        {
+        'id':122,
+        'nombre':'Cholomilk Jerez',
+        'descripcion':'Deliciosa y refresacante',
+        'ingredientes':'Agua',
+        'precio':'29',
+        'tamano':'Normal',
+        'tipo':'Agua',
+        'src':'https://i.pinimg.com/736x/87/c5/96/87c596a9e8ed85565b757877fd828987.jpg',
+        'categoria':'Bebidas',
+        'subCategoria':'Bolis de Sabores'}
+
+    ]
+    ]
+
+
+
 
 
 
