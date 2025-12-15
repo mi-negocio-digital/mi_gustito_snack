@@ -19,17 +19,17 @@ export const Categorias = () => {
 
         
 
-             {subCategorias[index].map((categoria,index)=>{
+             {subCategorias[index].map((subCategorias,index)=>{
 
                 
        
                  return(
                    <div key={index} className='categoria'>
        
-                      <h2>{categoria}</h2>
+                      <h2>{subCategorias}</h2>
                        
-       
-                       <ListaProductos cat={categorias[index]} subCat={categoria}/>
+                        {console.log(subCategorias)}
+                       <ListaProductos cat={categorias[index]} subCat={subCategorias}/>
        
 
        

@@ -39,14 +39,14 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
         
         console.log("Pedir este producto");
         
-        const message='Hola, quiero hacer una orden de: ';
-        let mensajeItem=e.nombre+"\n";
+        const message='Hola👋, quiero hacer una orden de:\n\n ';
+        let mensajeItem="• "+e.nombre+"\n";
             mensajeItem=mensajeItem+" Ingredientes: "+e.ingredientes+"\n";
             mensajeItem=mensajeItem+" Tamaño: "+e.tamano+"\n";
             mensajeItem=mensajeItem+" de Tipo:"+e.tipo+"\n\n";
             if(e.complemento && complemento!==null){
-                mensajeItem=mensajeItem+"Extra: ("+e.complemento[complemento].nombre+"-$"+e.complemento[complemento].precio; 
-                mensajeItem=mensajeItem+") Total: $"+(parseInt(e.precio)+parseInt(e.complemento[complemento].precio));
+                mensajeItem=mensajeItem+"Complemento: ("+e.complemento[complemento].nombre+"-$"+e.complemento[complemento].precio; 
+                mensajeItem=mensajeItem+")\n\n 📍Total: $"+(parseInt(e.precio)+parseInt(e.complemento[complemento].precio));
             }
             else
             mensajeItem=mensajeItem+"Total: $"+e.precio;
@@ -140,9 +140,9 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
         
         console.log("Pedir este producto");
         
-        const message='Hola, quiero hacer una orden de: ';
+        const message='Hola👋, quiero hacer una orden de: ';
            
-        mensajeProductos=mensajeProductos+"\nTotal: $"+suma;
+        mensajeProductos=mensajeProductos+"\n\n📍Total: $"+suma;
         
 
          const url = `https://wa.me/${numeroTelefonico}?text=${encodeURIComponent(message+mensajeProductos)}`;
@@ -187,13 +187,13 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
                         {suma=suma+((pedido.datos.precio)*(pedido.cantidad))}
                         // console.log(suma);
             
-            mensajeProductos="\n"+mensajeProductos+pedido.datos.nombre+"\n";
+            mensajeProductos=mensajeProductos+"\n • "+pedido.datos.nombre+"\n";
             mensajeProductos=mensajeProductos+" Ingredientes: "+pedido.datos.ingredientes+"\n";
             mensajeProductos=mensajeProductos+" Tamaño: "+pedido.datos.tamano+"\n";
             mensajeProductos=mensajeProductos+" de Tipo:"+pedido.datos.tipo+"\n\n";
             if(pedido.index_complemento!==null){
                 mensajeProductos=mensajeProductos
-                +"Extra: ("+pedido.datos.complemento[pedido.index_complemento].nombre+"-$"
+                +"Complemento: ("+pedido.datos.complemento[pedido.index_complemento].nombre+" + $"
                 +pedido.datos.complemento[pedido.index_complemento].precio+")"; 
                 suma=suma+((pedido.datos.complemento[pedido.index_complemento].precio)*(pedido.cantidad));
                 //console.log((pedido.datos.complemento[pedido.index_complemento].precio));
@@ -214,7 +214,7 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
                                    {(pedido.index_complemento!==null)&&(
                                     <span> 
                                         <p>{pedido.cantidad}</p>
-                                        <p>Extra: {pedido.datos.complemento[pedido.index_complemento].nombre}</p>
+                                        <p>Complemento: {pedido.datos.complemento[pedido.index_complemento].nombre}</p>
                                         <p>${pedido.datos.complemento[pedido.index_complemento].precio*pedido.cantidad}</p>
 
                                         
@@ -279,10 +279,10 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
                                     {
                                        
                                     mensajeConfirmacion.item.map((data,index)=>{
-                                        
+                                        console.log(tamano);
                                             return(
                                                 
-                                        <button key={index} className={ tamano===index?"button_active":"button_not_active"} onClick={()=>setTamano(index)}>{data[tamano].tamano}</button>
+                                        <button key={index} className={ tamano===index?"button_active":"button_not_active"} onClick={()=>setTamano(index)}>{data[tipo].tamano}</button>
                                         
                                    
                                             )

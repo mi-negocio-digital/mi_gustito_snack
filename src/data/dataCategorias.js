@@ -1,4 +1,4 @@
-export const subCategorias=[['Saludable','Botana','Desayuno','pal Gusto'],
+export const subCategorias=[['Verduras Locas','Botana','Desayuno','pal Gusto'],
                       ['Alitas'],
                       ['Oriental'],
                       ['Paquetes'],
