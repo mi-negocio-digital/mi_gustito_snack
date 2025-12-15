@@ -125,8 +125,10 @@ const decrementarCarrito=(e)=>{
   return (
     <div className='lista-productos'>
 
- /*
+
   {  dataProductos.slice(limite-3,limite).map((data,index)=>{
+
+     
 
     let seleccionado;
     
@@ -137,17 +139,23 @@ const decrementarCarrito=(e)=>{
         return(
           
           <>
-         
+
             {(cat===data[0][0].categoria || cat==='masComprado') &&
              
              (
 
               <>
 
+             
+
               {
+                
+
+                
                 (subCat)?
                 <>
                   {/*console.log(subCat)*/}
+
                       {data[0][0].subCategoria===subCat &&(
                              <section className='producto' >
 
@@ -281,7 +289,7 @@ const decrementarCarrito=(e)=>{
             }
             </>
         )
-  })}*/
+  })}
 
 
 

@@ -61,7 +61,7 @@ console.log(producto);
                                         
                                             return(
                                                 
-                                        <button key={index} className={ tamano===index?"button_active":"button_not_active"} onClick={()=>setTamano(index)}>{data[tamano].tamano}</button>
+                                        <button key={index} className={ tamano===index?"button_active":"button_not_active"} onClick={()=>setTamano(index)}>{data[tipo].tamano}</button>
                                         
                                    
                                             )

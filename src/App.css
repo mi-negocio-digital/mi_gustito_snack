@@ -461,6 +461,7 @@ nav li a{
   align-items: center;
   margin-right: 5px;
   margin-left: 5px;
+  flex-wrap: wrap;
 
   
 } 

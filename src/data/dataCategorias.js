@@ -1,5 +1,5 @@
 export const subCategorias=[['Verduras Locas','Botana','Desayuno','pal Gusto'],
-                      ['Alitas'],
+                      ['Alitas','Complementos'],
                       ['Oriental'],
                       ['Paquetes'],
                       ['Aguas Frescas','Latte Frio','Frappé','Malteada'
@@ -9,7 +9,7 @@ export const subCategorias=[['Verduras Locas','Botana','Desayuno','pal Gusto'],
 
 export const categorias=[
     'Snacks',
-    'Alitas',
+    'Alitas y Complementos',
     'Oriental',
     'Paquetes',
     'Bebidas'
