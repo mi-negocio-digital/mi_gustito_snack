@@ -18,15 +18,16 @@ const{ listadoPedidos,setListadoPedidos}=useContext(ContextoPedidos);
   
 
 
-const agregarCarrito=(e,index,primerArreglo)=>{
+const agregarCarrito=(e/*,index,primerArreglo*/)=>{
   //crear el pedido
-  console.log("AQUI "+listadoPedidos);
+  /*
   
 
   const pedido={
     'id':index,
     'datos':e,
     'cantidad':1
+    
   }
 
  
@@ -44,7 +45,16 @@ const agregarCarrito=(e,index,primerArreglo)=>{
  primerArreglo= listadoPedidos.findIndex(e=>e.id===index);
   }
 
+  */
 
+      const datosMensaje={
+      'valor':1,
+      'seleccion':3,
+      'item': e,
+      'titulo':'Producto Seleccionado',
+      'mensaje':'¿Desear Pedir este producto?'
+    }
+  setMensajeConfirmacion(datosMensaje);
 
 }
 
@@ -52,7 +62,7 @@ const {mensajeConfirmacion, setMensajeConfirmacion}=useContext(ContextoMensajeCo
 
 const pedirProductoIndividual=(e)=>{
 
-      console.log(mensajeConfirmacion);
+      
 
     const datosMensaje={
       'valor':1,
@@ -127,7 +137,8 @@ const decrementarCarrito=(e)=>{
         return(
           
           <>
-            {(cat===data[0].categoria || cat==='masComprado') &&
+         
+            {(cat===data[0][0].categoria || cat==='masComprado') &&
              
              (
 
@@ -137,7 +148,7 @@ const decrementarCarrito=(e)=>{
                 (subCat)?
                 <>
 
-                      {data[0].subCategoria===subCat &&(
+                      {data[0][0].subCategoria===subCat &&(
                              <section className='producto' >
 
 
@@ -145,11 +156,11 @@ const decrementarCarrito=(e)=>{
                                   <div>
                     
                 <div className='mask'>
-                    <img src={data[0].src} alt={index} ></img>
+                    <img src={data[0][0].src} alt={index} ></img>
                 </div>
                 
-                <h3>{data[0].nombre}<span className='precio'>{"$"+data[0].precio}</span> 
-                <span className='detalle' ><Link to={'/menu/'+data[0].nombre}>ver detalles  </Link></span></h3>
+                <h3>{data[0][0].nombre}<span className='precio'>{"$"+data[0][0].precio}</span> 
+                <span className='detalle' ><Link to={'/menu/'+data[0][0].nombre}>ver detalles  </Link></span></h3>
 
                 
                {/* <p>{data.descripcion}</p>*/}
@@ -167,7 +178,7 @@ const decrementarCarrito=(e)=>{
                   //:<button className='carrito' onClick={()=> agregarCarrito(data,index)}>Agregar al Carrito</button>
                   //:<button className='carrito' onClick={()=> agregarCarrito(data,index)}>Agregar al Carrito</button>
                   */
-                 (listadoPedidos && (seleccionado!==-1))?(
+                /* (listadoPedidos && (seleccionado!==-1))?(
                   <section className='pedidoAgregado'> 
 
                     <BsArrowLeftCircleFill className='arrowProducto' onClick={()=>decrementarCarrito(seleccionado)}/>
@@ -180,7 +191,7 @@ const decrementarCarrito=(e)=>{
                   </section>
                   
                  )
-                 :<button className='carrito' onClick={()=> agregarCarrito(data[0],index,seleccionado)}>Agregar al Carrito</button>
+                 :*/<button className='carrito' onClick={()=> agregarCarrito(data/*[0][0],index,seleccionado*/)}>Agregar al Carrito</button>
 
                   }
                   
@@ -204,11 +215,11 @@ const decrementarCarrito=(e)=>{
                                   <div>
                     
                 <div className='mask'>
-                    <img src={data[0].src} alt={index} ></img>
+                    <img src={data[0][0].src} alt={index} ></img>
                 </div>
                 
-                <h3>{data[0].nombre}<span className='precio'>{"$"+data[0].precio}</span> 
-                <span className='detalle' ><Link to={'/menu/'+data[0].nombre}>ver detalles  </Link></span></h3>
+                <h3>{data[0][0].nombre}<span className='precio'>{"$"+data[0][0].precio}</span> 
+                <span className='detalle' ><Link to={'/menu/'+data[0][0].nombre}>ver detalles  </Link></span></h3>
 
                 
                {/* <p>{data.descripcion}</p>*/}
@@ -226,7 +237,7 @@ const decrementarCarrito=(e)=>{
                   //:<button className='carrito' onClick={()=> agregarCarrito(data,index)}>Agregar al Carrito</button>
                   //:<button className='carrito' onClick={()=> agregarCarrito(data,index)}>Agregar al Carrito</button>
                   */
-                 (listadoPedidos && (seleccionado!==-1))?(
+                /* (listadoPedidos && (seleccionado!==-1))?(
                   <section className='pedidoAgregado'> 
 
                     <BsArrowLeftCircleFill className='arrowProducto' onClick={()=>decrementarCarrito(seleccionado)}/>
@@ -239,7 +250,7 @@ const decrementarCarrito=(e)=>{
                   </section>
                   
                  )
-                 :<button className='carrito' onClick={()=> agregarCarrito(data[0],index,seleccionado)}>Agregar al Carrito</button>
+                 :*/<button className='carrito' onClick={()=> agregarCarrito(data/*[0][0]/*,index,seleccionado*/)}>Agregar al Carrito</button>
 
                   }
                   

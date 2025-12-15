@@ -459,6 +459,7 @@ nav li a{
   display: flex;
   margin-right: 5px;
   margin-left: 5px;
+
   
 } 
 
@@ -484,7 +485,7 @@ margin-left: 2rem;
 .ventanaConfirmacion section .pedido  .mask,
 .content .carritoPedido .pedido .mask{
 
-  width: 10rem;
+  width: 30rem;
   height: auto;
   overflow: hidden;
 }
@@ -499,9 +500,15 @@ margin-left: 2rem;
 
 
 .ventanaConfirmacion .titulo-ticket{
+  width: 100%;
 display: flex;
 flex-direction: row;
 }
+
+
+
+
+
 
 .ventanaConfirmacion .titulo-ticket p{
   flex-basis: 33%;
@@ -517,13 +524,21 @@ flex-direction: row;
 }
 
 .ventanaConfirmacion .ticket .datos-ticket{
-  flex-direction: row;
+  width: 100%;
+  flex-direction: column;
 
 }
 
-.ventanaConfirmacion p{
+.ventanaConfirmacion .ticket .datos-ticket span{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.ventanaConfirmacion .ticket .datos-ticket span p{
   flex-basis: 33%;
 }
+
+
 
 
 
@@ -575,7 +590,7 @@ flex-direction: row;
 .ventanaConfirmacion{
 
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
   background: #282c345d;
 
@@ -583,6 +598,7 @@ flex-direction: row;
   min-width: 0;
   justify-content: center;
   align-items: center;
+
 
  
 
@@ -595,19 +611,78 @@ flex-direction: row;
   background: white;
   padding: 0;
   margin: 0;
+  justify-content: center;
+  align-items: center;
   
   
 }
 .ventanaConfirmacion button{
-    background-color: #028285;
-  color: white;
+ 
+ 
   padding: 15px;
   border: none;
   outline: none;
   border-radius: 30px;
   cursor: pointer;
   margin: 5px;
+  width: 6rem;
+  
 }
+
+.ventanaConfirmacion .button{
+  background: #028285;
+  color: white;
+}
+
+
+.button_active{
+  background: #028285;
+  color: white;
+}
+
+.button_not_active{
+  background: #ddd;
+  color: #000;
+}
+
+.base_complemento{
+ 
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+    justify-content: center;
+  align-items: center;
+}
+
+.base_complemento p{
+  font-size: 12px;
+}
+
+
+.complemento{
+  
+    width: 1.2rem;
+  height: 1.2rem;
+   border: 3px solid #3a3a3a;
+  border-radius: 100%;
+
+
+}
+
+.complemento_activado{
+
+
+  background: #09bec7;
+
+
+}
+
+.complemento_no_activado{
+
+background: #ddd;
+
+}
+
 
 
 
@@ -687,6 +762,14 @@ width: 100%;
 
   margin: 0;
   width: 100%;
+}
+
+.ventanaConfirmacion section .pedido  .mask,
+.content .carritoPedido .pedido .mask{
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 }
 

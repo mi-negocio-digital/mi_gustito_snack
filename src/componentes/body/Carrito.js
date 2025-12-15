@@ -21,8 +21,14 @@ const modificarTotalProductos=(n, lista,condicion)=>{
 
     lista.map((pedido)=>{
         if(condicion)
-        n=n+(pedido.cantidad);
-        else n=n+((pedido.cantidad)*(pedido.datos.precio));
+       { n=n+(pedido.cantidad);
+
+       }
+        else{ n=n+((pedido.cantidad)*(pedido.datos.precio));
+          if(pedido.index_complemento!==null) {
+            //console.log(pedido.datos.complemento[pedido.index_complemento].precio)
+            n=n+((pedido.cantidad)*(pedido.datos.complemento[pedido.index_complemento].precio));}
+        }
     })
 
     return n;
@@ -30,8 +36,10 @@ const modificarTotalProductos=(n, lista,condicion)=>{
 }
 
 useEffect(()=>{
+  
+  if(listadoPedidos!==null){
     setTotalProductos((n)=>modificarTotalProductos(n,listadoPedidos,true));
-    setTotalPrecio((n)=>modificarTotalProductos(n,listadoPedidos,false));
+    setTotalPrecio((n)=>modificarTotalProductos(n,listadoPedidos,false));}
 },[])
 
 const {mensajeConfirmacion,setMensajeConfirmacion} = useContext(ContextoMensajeConfirmacion);
@@ -91,7 +99,7 @@ setTotalPrecio((n)=>modificarTotalProductos(n,pedidosEditados,false));
 
 const confirmacion=()=>{
 
-    console.log(mensajeConfirmacion);
+
 
     const datosMensaje={
       'valor':1,
@@ -138,6 +146,12 @@ const confirmacion=()=>{
                         <div className="datosPedido2">
 
                         <h2> {pedido.datos.nombre}</h2>
+                        {pedido.index_complemento!==null &&<span style={{color:"#ddd"}}>
+                                      
+                                        <p>{pedido.cantidad}  -  </p>
+                                        <p>Extra: {pedido.datos.complemento[pedido.index_complemento].nombre}</p>
+                                        <p>${pedido.datos.complemento[pedido.index_complemento].precio*pedido.cantidad}</p>
+                          </span>}
 
                         <span>
                         <BsArrowLeftCircleFill className="arrowCarrito" onClick={()=>decrementarCarrito(index)}/>
@@ -148,7 +162,12 @@ const confirmacion=()=>{
                         </div>
 
                          <span>
-                            {"$"+(pedido.datos.precio)*(pedido.cantidad)}
+                            {
+                              (pedido.index_complemento===null)?
+                            "$"+(pedido.datos.precio)*(pedido.cantidad)
+                            :"$"+(parseInt((pedido.datos.precio)*(pedido.cantidad))
+                            +parseInt((pedido.datos.complemento[pedido.index_complemento].precio)*(pedido.cantidad)))
+                            }
                          </span>
 
                          </div>
