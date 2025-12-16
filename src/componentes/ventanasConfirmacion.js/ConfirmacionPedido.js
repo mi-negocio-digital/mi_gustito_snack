@@ -77,7 +77,7 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
         pedidos[n]=pedido;
 
         localStorage.setItem("pedidos",JSON.stringify(pedidos));
-        setListadoPedidos(()=>[pedido]);
+        setListadoPedidos(()=>pedidos);
         
        }catch(error){
             console.log(error);
@@ -190,11 +190,11 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
             mensajeProductos=mensajeProductos+"\n • "+pedido.datos.nombre+"\n";
             mensajeProductos=mensajeProductos+" Ingredientes: "+pedido.datos.ingredientes+"\n";
             mensajeProductos=mensajeProductos+" Tamaño: "+pedido.datos.tamano+"\n";
-            mensajeProductos=mensajeProductos+" de Tipo:"+pedido.datos.tipo+"\n\n";
+            mensajeProductos=mensajeProductos+" de Tipo:"+pedido.datos.tipo+"\n";
             if(pedido.index_complemento!==null){
                 mensajeProductos=mensajeProductos
                 +"Complemento: ("+pedido.datos.complemento[pedido.index_complemento].nombre+" + $"
-                +pedido.datos.complemento[pedido.index_complemento].precio+")"; 
+                +pedido.datos.complemento[pedido.index_complemento].precio+")\n"; 
                 suma=suma+((pedido.datos.complemento[pedido.index_complemento].precio)*(pedido.cantidad));
                 //console.log((pedido.datos.complemento[pedido.index_complemento].precio));
                 
@@ -274,12 +274,14 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
             
                                     <h2> {mensajeConfirmacion.item[tamano][tipo].nombre}</h2>
             
-                                        Tamaño:
+                                      { /* Tamaño:*/}
                                         <span className='posicionButton'>
                                     {
                                        
-                                    mensajeConfirmacion.item.map((data,index)=>{
-                                        console.log(tamano);
+                                    ( !(mensajeConfirmacion.item.length<=1))&&(
+                                        
+                                        mensajeConfirmacion.item.map((data,index)=>{
+                                       
                                             return(
                                                 
                                         <button key={index} className={ tamano===index?"button_active":"button_not_active"} onClick={()=>setTamano(index)}>{data[tipo].tamano}</button>
@@ -287,12 +289,14 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
                                    
                                             )
                                     })
+                                )
                                     }
                                      </span>
-                                    Tipo:
+                                   { /* Tipo:*/}
                                     <span className='posicionButton'>
 
-                                    {
+                                    
+                                    {(!(mensajeConfirmacion.item[tamano].length<=1))&&(  
                                         mensajeConfirmacion.item[tamano].map((data,index)=>{
 
                                            return(
@@ -302,7 +306,7 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
 
                                         })
 
-                                    }</span>
+                                    )}</span>
 
                                         
 
@@ -368,10 +372,10 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
 
 
 
-            <button className='button' onClick={
+            <button style={{background:"#ef823a"}} className='button' onClick={
             ()=>productoIndividual(mensajeConfirmacion.item[tamano][tipo])}>{mensajeConfirmacion.seleccion===2?"Aceptar":"Agregar al Carrito"}</button>
 
-            <button className='button' onClick={()=>{ setMensajeConfirmacion(({
+            <button style={{background:"#ef823a"}} className='button' onClick={()=>{ setMensajeConfirmacion(({
                 'valor':0,
                 'titulo':'',
                 'mensaje':'',

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const MasInfo = () => {
   return (
@@ -8,12 +9,14 @@ export const MasInfo = () => {
 
         <p>Revisa Todos Nuestros Productos Disponibles: </p>
 
-        <button > Ordena Aqui!!!</button>
+        <Link className='button' to="/menu">OrdenaAqui!!!</Link>
 
 
         <p>Quienes somos???</p>
 
-        <button >Aqui tendrás la respuesta</button>
+        <Link className='button' to="/quienes_somos">Aqui tendrás la respuesta</Link>
+
+        <p></p>
     </div>
   )
 }

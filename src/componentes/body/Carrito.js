@@ -116,7 +116,7 @@ const confirmacion=()=>{
 }
     
 
-   
+
   return (
 
     <div className="seccionCarrito">
@@ -128,7 +128,7 @@ const confirmacion=()=>{
              
 
 {listadoPedidos.map((pedido, index)=>{
-              
+            
 
                 return(
 

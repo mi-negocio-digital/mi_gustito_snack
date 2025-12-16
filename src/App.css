@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
 
 
 
@@ -10,6 +12,7 @@ body{
   background-size: cover;                     
   background-position: center;    
   background-attachment: fixed;
+  font-family:'Baloo 2', cursive;
  
 
 
@@ -20,7 +23,7 @@ body{
 
 .layout{
 
-  font-family:'Baloo 2', cursive;
+ /* font-family:'Baloo 2', cursive;*/
   width: 100%;
    
 
@@ -640,6 +643,16 @@ flex-direction: row;
   cursor: pointer;
   margin: 5px;
   width: 6rem;
+  
+}
+
+.button{
+  text-decoration: none;
+  background:#028285;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+
   
 }
 
