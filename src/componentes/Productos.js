@@ -1,12 +1,14 @@
 import React, { useContext,useState } from 'react'
 import { ContextoPedidos } from '../helpers/ContextoPedidos'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { dataProductos } from '../data/dataProductos';
 import { Error404 } from './body/Error404';
+
 
 export const Productos = () => {
 
 const parm=useParams();
+
 
     const [tamano,setTamano]=useState(0);
     const [tipo,setTipo]=useState(0);
@@ -20,6 +22,10 @@ let producto = dataProductos.find(n=> n[0][0].nombre===parm.id);
 console.log(producto);
 
 
+const accionSalir=()=>{
+  
+    window.history.back();
+}
   return !producto?(
 
     
@@ -84,7 +90,7 @@ console.log(producto);
                                     }</span>
 
                                          <p>Ingredientes:  {producto[tamano][tipo].ingredientes}</p>
-
+                                                <h3>Complementos</h3>
                                     {
                                         producto[tamano][tipo].complemento?(
                                             
@@ -102,14 +108,21 @@ console.log(producto);
                                         
                                         ):(
                                             <span>
-
+                                                <p>Ninguno</p>
                                             </span>
                                         )
+
+                                      
                                         
                                       
                                       // console.log(mensajeConfirmacion.item[tamano][tipo].complemento[1].nombre)
                                     }
+
+                                    <span>
+                                        ${ producto[tamano][tipo].precio}
+                                    </span>
             
+                                    
                                     </div>
             
 
@@ -123,7 +136,7 @@ console.log(producto);
             
             
                                     
-            
+                                        <button onClick={()=>accionSalir()} style={{background:"#ef823a", color:"#fff"} }>Salir</button>
             
                                 </section>
             

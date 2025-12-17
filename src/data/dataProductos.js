@@ -2350,7 +2350,7 @@ export const dataProductos =[
         
         {
         'id':122,
-        'nombre':'Cholomilk Jerez',
+        'nombre':'Bolis de Agua',
         'descripcion':'Deliciosa y refresacante',
         'ingredientes':'Agua',
         'precio':'29',

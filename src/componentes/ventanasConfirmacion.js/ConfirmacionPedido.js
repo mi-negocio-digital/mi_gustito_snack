@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { ContextoPedidos } from '../../helpers/ContextoPedidos'
 import { ContextoMensajeConfirmacion } from '../../helpers/ContextoMensajeConfirmacion';
 import { GuardarEnStorage } from '../../helpers/GuardarEnStorage';
+import {EvitarRestrocederNavegador} from '../../helpers/EvitarRestrocederNavegador'
 
 export const ConfirmacionPedido = ({titulo,mensaje}) => {
 
@@ -27,11 +28,15 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
     }, )
 
 
+    EvitarRestrocederNavegador();
+
     let suma=0;
     let mensajeProductos="";
 
 
-    const productoIndividual=(e)=>{
+    const productoIndividual=(e,cantidadTipo,cantidadTamano)=>{
+
+        console.log(cantidadTamano)
 
        if(mensajeConfirmacion.seleccion===2) {
         const numeroTelefonico='5219512501700';
@@ -40,10 +45,13 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
         console.log("Pedir este producto");
         
         const message='Hola👋, quiero hacer una orden de:\n\n ';
-        let mensajeItem="• "+e.nombre+"\n";
+        let mensajeItem="• ("+e.cantidad+")"+e.nombre+"\n";
             mensajeItem=mensajeItem+" Ingredientes: "+e.ingredientes+"\n";
+            if(cantidadTamano>1)
             mensajeItem=mensajeItem+" Tamaño: "+e.tamano+"\n";
+            if(cantidadTipo>1)
             mensajeItem=mensajeItem+" de Tipo:"+e.tipo+"\n\n";
+            
             if(e.complemento && complemento!==null){
                 mensajeItem=mensajeItem+"Complemento: ("+e.complemento[complemento].nombre+"-$"+e.complemento[complemento].precio; 
                 mensajeItem=mensajeItem+")\n\n 📍Total: $"+(parseInt(e.precio)+parseInt(e.complemento[complemento].precio));
@@ -62,15 +70,18 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
         //primero verificar si el producto existe
 
        try{
-        const n= listadoPedidos.findIndex((n)=>n.datos.id===e.id);
+        let n= listadoPedidos.findIndex((n)=>n.datos.id===e.id && n.index_complemento===complemento);
         if(n===-1) throw "Crear nuevo item en pedido ya que no existe"
+
         const pedidos=JSON.parse(localStorage.getItem("pedidos"));
         
         const pedido={
            'id': pedidos[n].id,
            "datos": pedidos[n].datos,
            "cantidad":parseInt(pedidos[n].cantidad)+1,
-           'index_complemento' : pedidos[n].index_complemento
+           'index_complemento' : pedidos[n].index_complemento,
+            'cantidad_tipo':pedido[n].cantidad_tipo,
+            'cantidad_tamano':pedido[n].cantidad_tamano
         } ;
 
 
@@ -88,7 +99,9 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
     'id':new Date().getTime(),
     'datos':e,
     'cantidad':1,
-    'index_complemento' :  complemento
+    'index_complemento' :  complemento,
+    'cantidad_tipo': cantidadTipo,
+    'cantidad_tamano':cantidadTamano
         }
 
 
@@ -187,10 +200,15 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
                         {suma=suma+((pedido.datos.precio)*(pedido.cantidad))}
                         // console.log(suma);
             
-            mensajeProductos=mensajeProductos+"\n • "+pedido.datos.nombre+"\n";
-            mensajeProductos=mensajeProductos+" Ingredientes: "+pedido.datos.ingredientes+"\n";
-            mensajeProductos=mensajeProductos+" Tamaño: "+pedido.datos.tamano+"\n";
-            mensajeProductos=mensajeProductos+" de Tipo:"+pedido.datos.tipo+"\n";
+            mensajeProductos=mensajeProductos+"\n • ("+pedido.cantidad+")"+pedido.datos.nombre;
+            
+            
+           if(pedido.cantidad_tipo>1)mensajeProductos=mensajeProductos+ "("+pedido.datos.tipo+")";
+
+           if(pedido.cantidad_tamano>1) mensajeProductos=mensajeProductos+"\n Tamaño:"+pedido.datos.tamano;
+            mensajeProductos=mensajeProductos+"\n Ingredientes: "+pedido.datos.ingredientes+"\n";
+            
+            
             if(pedido.index_complemento!==null){
                 mensajeProductos=mensajeProductos
                 +"Complemento: ("+pedido.datos.complemento[pedido.index_complemento].nombre+" + $"
@@ -206,16 +224,16 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
                                 <section  key={index} className='datos-ticket'>
                                     <span>
                                     <p>{pedido.cantidad}</p>
-                                    <p>{pedido.datos.nombre}</p>
-                                    <p>${(pedido.datos.precio)*(pedido.cantidad)}</p>
+                                    <p>{pedido.datos.nombre} {pedido.cantidad_tipo>1&&"("+pedido.datos.tipo +")"}</p>
+                                    <p style={{color:"#058288"}}>${(pedido.datos.precio)*(pedido.cantidad)}</p>
                                     </span>
                                     
 
                                    {(pedido.index_complemento!==null)&&(
                                     <span> 
-                                        <p>{pedido.cantidad}</p>
-                                        <p>Complemento: {pedido.datos.complemento[pedido.index_complemento].nombre}</p>
-                                        <p>${pedido.datos.complemento[pedido.index_complemento].precio*pedido.cantidad}</p>
+                                        <p style={{color:"#bbb"}}>{pedido.cantidad}</p>
+                                        <p style={{color:"#bbb"}}>Complemento: {pedido.datos.complemento[pedido.index_complemento].nombre}</p>
+                                        <p style={{color:"#058288"}}>${pedido.datos.complemento[pedido.index_complemento].precio*pedido.cantidad}</p>
 
                                         
                                      </span>
@@ -373,7 +391,7 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
 
 
             <button style={{background:"#ef823a"}} className='button' onClick={
-            ()=>productoIndividual(mensajeConfirmacion.item[tamano][tipo])}>{mensajeConfirmacion.seleccion===2?"Aceptar":"Agregar al Carrito"}</button>
+            ()=>productoIndividual(mensajeConfirmacion.item[tamano][tipo],mensajeConfirmacion.item[tamano].length,mensajeConfirmacion.item.length)}>{mensajeConfirmacion.seleccion===2?"Aceptar":"Agregar al Carrito"}</button>
 
             <button style={{background:"#ef823a"}} className='button' onClick={()=>{ setMensajeConfirmacion(({
                 'valor':0,

@@ -23,7 +23,7 @@ export const Menu = () => {
 
                 <ListaProductos cat={categorias[index]}/>
 
-                <p ><Link to={'/menu/categorias/'+categorias[index]}>Ver mas ...</Link></p>
+                <h2 className='ver-mas'><Link to={'/menu/categorias/'+categorias[index]}>Ver mas ...</Link></h2>
 
             </div>
           )

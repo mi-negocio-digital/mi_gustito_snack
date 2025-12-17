@@ -134,8 +134,7 @@ const confirmacion=()=>{
 
                     <section className='pedido' key={index}>
 
-                        <h3>{pedido.datos.categoria}</h3>
-                        <hr/>
+
 
                         <div className="datosPedido">
 
@@ -146,7 +145,8 @@ const confirmacion=()=>{
                         <div className="datosPedido2">
 
                         <h2> {pedido.datos.nombre}</h2>
-                        {pedido.index_complemento!==null &&<span style={{color:"#ddd"}}>
+                        {pedido.index_complemento!==null &&
+                        <span style={{color:"#ddd", fontSize:"1rem"}}>
                                       
                                      
                                         <p>complemento: {pedido.datos.complemento[pedido.index_complemento].nombre}</p>

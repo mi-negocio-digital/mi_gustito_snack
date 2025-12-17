@@ -180,7 +180,7 @@ nav li a{
 }
 @keyframes glow {
    from { text-shadow: 0 0 10px #ff00b3; }
-  to   { text-shadow: 0 0 20px #1900ff; }
+  to   { text-shadow: 0 0 10px #0800ff; }
 }
 
 .content .slogan img{
@@ -224,6 +224,25 @@ nav li a{
 
   background: white;  
 }
+
+.content .menuPrincipal .categoria a {
+ text-decoration: none;
+ color: #ef823a;
+}
+
+.content .menuPrincipal .categoria .ver-mas{
+
+ 
+
+  animation: anim 1.5s infinite alternate;
+  
+}
+
+@keyframes anim { 
+   from { text-shadow: 0 0 1px #ef823a; }
+  to   { text-shadow: 0 0 1px #ef823a; }
+}
+
 
 .content .menuPrincipal,
 .content .menu{
@@ -544,6 +563,7 @@ flex-direction: row;
   flex-direction: row;
 }
 .ventanaConfirmacion .ticket .datos-ticket span p{
+  font-size: 0.7rem;
   flex-basis: 33%;
 }
 
@@ -713,6 +733,30 @@ background: #ddd;
 
 }
 
+
+.content .quienesSomos{
+  display: flex;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  width: 70%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5%;
+  background-color: white;
+
+  border: 1px solid #ddd;
+  box-shadow:0px 0px 5px #ddd ;
+
+  border-radius: 2rem;
+
+
+}
+
+.content .section{
+
+}
 
 
 
