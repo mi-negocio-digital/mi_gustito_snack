@@ -14,6 +14,7 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
     const [tipo,setTipo]=useState(0);
     const [complemento,setComplemento]=useState(null);
     const [precioTotal, setPrecioTotal]=useState(null);
+    const [activarVenta, setActivarVenta]=useState(false)
 
     useEffect(()=>{
         
@@ -26,6 +27,19 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
             
 
     }, )
+
+    useEffect(()=>{
+        const horario = new Date().getHours();
+
+        //14 a 22
+
+        console.log(horario);
+
+       if(horario< 23  && horario>=14) setActivarVenta(()=>(true));
+      
+
+        console.log(activarVenta)
+    },[]);
 
 
     EvitarRestrocederNavegador();
@@ -155,7 +169,7 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
         
         const message='Hola👋, quiero hacer una orden de: ';
            
-        mensajeProductos=mensajeProductos+"\n\n📍Total: $"+suma;
+        mensajeProductos=mensajeProductos+"\n\n\n📍Total: $"+suma+"";
         
 
          const url = `https://wa.me/${numeroTelefonico}?text=${encodeURIComponent(message+mensajeProductos)}`;
@@ -168,18 +182,30 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
                 'mensaje':'',
             })
 
+            localStorage.setItem("pedidos",JSON.stringify([]));
+
+            setListadoPedidos([]);
+
     }
 
     const productoCarrito=()=>{
 
     }
     
+    console.log(activarVenta)
    
   return (
 
         <div className='ventanaConfirmacion'>
-        
-        {(mensajeConfirmacion.seleccion===1 )&&(
+
+{ 
+
+(activarVenta)?(
+                <>
+                
+
+        {       
+        (mensajeConfirmacion.seleccion===1 )&&(
             
                <section className='ticket'>
 
@@ -217,6 +243,7 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
                 //console.log((pedido.datos.complemento[pedido.index_complemento].precio));
                 
             }
+            mensajeProductos=mensajeProductos+"$"+pedido.datos.precio+"\n";
             console.log(mensajeProductos);
             
                             return(
@@ -404,6 +431,33 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
 
         )}
 
+
+                </>
+            ):(<div style={{
+                background:"#fff",
+                padding:"1rem"
+                
+                }}  className='base_ventana'>
+
+                <div className='pedido'>
+
+                                    <h2>Horiario de Atención </h2>
+
+                <h3>Horario de Envío</h3>
+                <p style={{color:"#ff0000"}}>2pm - 10pm</p>
+
+                <h3>Horario de Surcursal</h3>
+                <p>Domingo a Jueves: 1:30pm - 10:30pm</p>
+                <p>Viernes y Sabado: 1:30pm - 11:30pm</p>
+
+                <p>Por el momento la sucursal se encuentra cerrada.</p>
+                </div>
+
+                
+
+            </div>)
+            
+            }
         
         
         </div>

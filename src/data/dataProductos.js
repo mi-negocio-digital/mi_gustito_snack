@@ -197,7 +197,7 @@ export const dataProductos =[
       'complemento': [
         { 'nombre': 'salsa', 'precio': '0' }
       ],
-      'src': 'https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/egtwfphd/90d8cbdd-27f7-42a2-808f-651e5002d01a.jpg',
+      'src': 'https://mojo.generalmills.com/api/public/content/sd8L-uw7dEm7NgAoMQtykQ_gmi_hi_res_jpeg.jpeg?v=98ea16f2&t=16e3ce250f244648bef28c5949fb99ff',
       'categoria': 'Snacks',
       'subCategoria': 'Verduras Locas'
     }
@@ -214,7 +214,7 @@ export const dataProductos =[
       'complemento': [
         { 'nombre': 'salsa', 'precio': '0' }
       ],
-      'src': 'https://mojo.generalmills.com/api/public/content/sd8L-uw7dEm7NgAoMQtykQ_gmi_hi_res_jpeg.jpeg?v=98ea16f2&t=16e3ce250f244648bef28c5949fb99ff',
+      'src': 'https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/egtwfphd/90d8cbdd-27f7-42a2-808f-651e5002d01a.jpg',
       'categoria': 'Snacks',
       'subCategoria': 'Verduras Locas'
     },
@@ -1403,84 +1403,7 @@ export const dataProductos =[
     ]
     ],
 
-//  CATEGORIA PAQUETES SUBCATEGORIAS PAQUETES
 
-[ 
-        [
-                {
-        'id':68,
-        'nombre':'Paquete Familiar',
-        'descripcion':'Para disfrutar en Familia',
-        'ingredientes':'1 orden de alitas 500 gr + 1 orden de boneless 300 gr +dedos de queso + aros de cebolla + papas gajo + papasfrancesa + salchipulpos y salchitaco + 4 aderezos.',
-        'precio':'590',
-        'tamano':'Normal',
-        'tipo':'Paquete Familiar',
-
-
-
-        'src':'https://buffalucas.com/es/img/menu/charolas_bf_menu.png',
-        'categoria':'Paquetes',
-        'subCategoria':'Paquetes'}
-
-    ]
-    ],
-[ 
-        [
-                {
-        'id':69,
-        'nombre':'Paquete Pareja',
-        'descripcion':'Para disfrutar en Pareja',
-        'ingredientes':'1 orden de alitas 500 gr + dedos de queso + aros decebolla + papas gajo + papas francsa + salchipulpos +2 aderezos.',
-        'precio':'390',
-        'tamano':'Normal',
-        'tipo':'Paquete Pareja',
-
-
-
-        'src':'https://img0.didiglobal.com/static/soda_public/do1_TEbgyTwrlI8gxYTIy5rh',
-        'categoria':'Paquetes',
-        'subCategoria':'Paquetes'}
-
-    ]
-    ],
-[ 
-        [
-                {
-        'id':70,
-        'nombre':'Gustito Box Familiar',
-        'descripcion':'Para disfrutar con mucha gente',
-        'ingredientes':'1 orden de alitas 500 gr + 1 orden de boneless 300 gr +2 rollos de sushi empanizado + dedos de queso + arosde cebolla + papas gajo + salchipulpos + 4 aderezos.',
-        'precio':'748',
-        'tamano':'Normal',
-        'tipo':'Gustito Box Familiar',
-
-
-
-        'src':'https://tb-static.uber.com/prod/image-proc/processed_images/2c1ddab35027322b894995c1348ae082/1da9a9e826d15157cea1c5bb8696f248.webp',
-        'categoria':'Paquetes',
-        'subCategoria':'Paquetes'}
-
-    ]
-    ],
-[ 
-        [
-                {
-        'id':71,
-        'nombre':'Gustito Box Pareja',
-        'descripcion':'Para disfrutar con tu pareja',
-        'ingredientes':'1 orden de alitas 500 gr + 1 rollos de sushi empanizado +dedos de queso + aros de cebolla + papas gajo +salchipulpos + 2 aderezos.',
-        'precio':'450',
-        'tamano':'Normal',
-        'tipo':'Gustito Box Pareja',
-
-
-
-        'src':'https://tb-static.uber.com/prod/image-proc/processed_images/493295fb19c2777f5fefe2c7cfe2aac8/9e31c708e4cf73b6e3ea1bd4a9b6e16b.jpeg',
-        'categoria':'Paquetes',
-        'subCategoria':'Paquetes'}
-
-    ]
-    ],
 //  CATEGORIA BEBIDAS SUBCATEGORIAS AGUAS FRESCAS
 
 [ 
@@ -2333,12 +2256,13 @@ export const dataProductos =[
 
     ]
     ],
+    //SUBCATEGORIA BOLIS
 [ 
         [
 
         {
         'id':121,
-        'nombre':'Bolis de Sabores',
+        'nombre':'Bolis de Leche',
         'descripcion':'Deliciosa y refrescante',
         'ingredientes':'Leche',
         'precio':'29',
@@ -2361,8 +2285,86 @@ export const dataProductos =[
         'subCategoria':'Bolis de Sabores'}
 
     ]
-    ]
+    ],
 
+//  CATEGORIA PAQUETES SUBCATEGORIAS PAQUETES
+
+[ 
+        [
+                {
+        'id':68,
+        'nombre':'Paquete Familiar',
+        'descripcion':'Para disfrutar en Familia',
+        'ingredientes':'1 orden de alitas 500 gr + 1 orden de boneless 300 gr +dedos de queso + aros de cebolla + papas gajo + papasfrancesa + salchipulpos y salchitaco + 4 aderezos.',
+        'precio':'590',
+        'tamano':'Normal',
+        'tipo':'Paquete Familiar',
+
+
+
+        'src':'https://buffalucas.com/es/img/menu/charolas_bf_menu.png',
+        'categoria':'Paquetes',
+        'subCategoria':'Paquetes'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':69,
+        'nombre':'Paquete Pareja',
+        'descripcion':'Para disfrutar en Pareja',
+        'ingredientes':'1 orden de alitas 500 gr + dedos de queso + aros decebolla + papas gajo + papas francsa + salchipulpos +2 aderezos.',
+        'precio':'390',
+        'tamano':'Normal',
+        'tipo':'Paquete Pareja',
+
+
+
+        'src':'https://img0.didiglobal.com/static/soda_public/do1_TEbgyTwrlI8gxYTIy5rh',
+        'categoria':'Paquetes',
+        'subCategoria':'Paquetes'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':70,
+        'nombre':'Gustito Box Familiar',
+        'descripcion':'Para disfrutar con mucha gente',
+        'ingredientes':'1 orden de alitas 500 gr + 1 orden de boneless 300 gr +2 rollos de sushi empanizado + dedos de queso + arosde cebolla + papas gajo + salchipulpos + 4 aderezos.',
+        'precio':'748',
+        'tamano':'Normal',
+        'tipo':'Gustito Box Familiar',
+
+
+
+        'src':'https://tb-static.uber.com/prod/image-proc/processed_images/2c1ddab35027322b894995c1348ae082/1da9a9e826d15157cea1c5bb8696f248.webp',
+        'categoria':'Paquetes',
+        'subCategoria':'Paquetes'}
+
+    ]
+    ],
+[ 
+        [
+                {
+        'id':71,
+        'nombre':'Gustito Box Pareja',
+        'descripcion':'Para disfrutar con tu pareja',
+        'ingredientes':'1 orden de alitas 500 gr + 1 rollos de sushi empanizado +dedos de queso + aros de cebolla + papas gajo +salchipulpos + 2 aderezos.',
+        'precio':'450',
+        'tamano':'Normal',
+        'tipo':'Gustito Box Pareja',
+
+
+
+        'src':'https://tb-static.uber.com/prod/image-proc/processed_images/493295fb19c2777f5fefe2c7cfe2aac8/9e31c708e4cf73b6e3ea1bd4a9b6e16b.jpeg',
+        'categoria':'Paquetes',
+        'subCategoria':'Paquetes'}
+
+    ]
+    ],
 
 
 

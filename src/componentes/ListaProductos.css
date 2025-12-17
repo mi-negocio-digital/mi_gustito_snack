@@ -126,6 +126,7 @@ margin-left: 10px;
     .producto{
         flex-basis: 20%;
         margin: 5px;
+        height: auto;
     }
 
   

@@ -13,7 +13,7 @@ body{
   background-position: center;    
   background-attachment: fixed;
   font-family:'Baloo 2', cursive;
- 
+ user-select: none;
 
 
   
@@ -60,9 +60,11 @@ body{
   /**/
  display: grid;
 
- grid-template-areas: "logo navegador";
+ grid-template-areas: "logo navegador ";
 
 }
+
+
 
 .logo{
   grid-area: logo;
@@ -196,7 +198,14 @@ nav li a{
   margin-bottom: 30px;
 }
 
+.content .menuPrincipal{
 
+    flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  background: white;  
+}
 
 .content .menuPrincipal .categoria .lista-productos{
  display: flex;
@@ -204,7 +213,8 @@ nav li a{
   flex-wrap: nowrap;
   margin: 0;
   padding: 0;
-  align-items: center;
+  /*align-items: center;*/
+
 
 
  
@@ -216,14 +226,7 @@ nav li a{
 
 }
 
-.content .menuPrincipal{
 
-    flex-direction: column;
-  justify-content: center;
-  width: 100%;
-
-  background: white;  
-}
 
 .content .menuPrincipal .categoria a {
  text-decoration: none;
@@ -237,6 +240,8 @@ nav li a{
   animation: anim 1.5s infinite alternate;
   
 }
+
+
 
 @keyframes anim { 
    from { text-shadow: 0 0 1px #ef823a; }
@@ -264,6 +269,18 @@ nav li a{
   text-shadow: 5px 5px 5px  #282828;
   animation: glow 1.5s infinite alternate;
 }
+/*
+.content .menuPrincipal .categoria .lista-productos .producto .mask{
+  background: #028285;
+  height: 50px;
+}
+
+.content .menuPrincipal .categoria .lista-productos .producto .mask img{
+  height: 100%;
+}
+*/
+
+
 .content .menu h1{
   background: white;
   font-size: 5rem;
@@ -766,11 +783,60 @@ background: #ddd;
   color: #61dafb;
 }
 
+
+
+.btnCarrito{
+
+ margin: 0;
+   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.btnCarrito p{
+  color: #ef823a;
+  font-size: 15px;
+  margin: -10px;
+   padding: 0;
+
+}
+
+.mostrar-ocultar{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-carrito{
+  color: white;
+  font-size: 24px;
+}
+.activado{
+  color: #ef823a;
+}
+.lista-nav{
+ 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btnLista{
+  display: none;
+}
+
 @media screen and (max-width:900px) {
+.mostrar-ocultar{
+ display: none;
+}
+
+.btnLista{
+  display: flex;
+}
 
 .nav ul{
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
 }
   .content .carritoPedido{
     flex-direction: column;
