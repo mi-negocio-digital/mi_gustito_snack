@@ -55,6 +55,7 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
        if(mensajeConfirmacion.seleccion===2) {
         const numeroTelefonico='5213318416848';
             //numero de usuario
+            //modificacion
         
         console.log("Pedir este producto");
         
