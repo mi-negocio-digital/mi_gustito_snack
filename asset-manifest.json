@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/mi_gustito_snack/static/css/main.9ae6054f.css",
-    "main.js": "/mi_gustito_snack/static/js/main.22053aec.js",
+    "main.js": "/mi_gustito_snack/static/js/main.7e5de6cc.js",
     "static/media/194.png": "/mi_gustito_snack/static/media/194.f558a4203b5a06c1b780.png",
     "static/media/logo_original_fondo.png": "/mi_gustito_snack/static/media/logo_original_fondo.19cf208045b74080dc6b.png",
     "static/media/8116.png": "/mi_gustito_snack/static/media/8116.a7a1de070003dd123e8d.png",
     "static/media/logo.png": "/mi_gustito_snack/static/media/logo.013efc96b7254a84f0bf.png",
     "index.html": "/mi_gustito_snack/index.html",
     "main.9ae6054f.css.map": "/mi_gustito_snack/static/css/main.9ae6054f.css.map",
-    "main.22053aec.js.map": "/mi_gustito_snack/static/js/main.22053aec.js.map"
+    "main.7e5de6cc.js.map": "/mi_gustito_snack/static/js/main.7e5de6cc.js.map"
   },
   "entrypoints": [
     "static/css/main.9ae6054f.css",
-    "static/js/main.22053aec.js"
+    "static/js/main.7e5de6cc.js"
   ]
 }
