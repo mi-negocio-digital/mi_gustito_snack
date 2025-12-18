@@ -53,13 +53,13 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
         console.log(cantidadTamano)
 
        if(mensajeConfirmacion.seleccion===2) {
-        const numeroTelefonico='5219512501700';
+        const numeroTelefonico='5213318416848';
 
         
         console.log("Pedir este producto");
         
         const message='Hola👋, quiero hacer una orden de:\n\n ';
-        let mensajeItem="• ("+e.cantidad+")"+e.nombre+"\n";
+        let mensajeItem="• "+e.nombre+"\n";
             mensajeItem=mensajeItem+" Ingredientes: "+e.ingredientes+"\n";
             if(cantidadTamano>1)
             mensajeItem=mensajeItem+" Tamaño: "+e.tamano+"\n";
@@ -162,7 +162,7 @@ export const ConfirmacionPedido = ({titulo,mensaje}) => {
 
         console.log("Aqui se agrega los valores de la lista de pedidos para whatsapp");
 
-        const numeroTelefonico='5219512501700';
+        const numeroTelefonico='5213318416848';
 
         
         console.log("Pedir este producto");
